@@ -1,0 +1,148 @@
+ @media screen and (max-width: 1200px) {
+	.favs {
+		display: block !important;
+	}
+	/* reduced size of search bar */
+	.search-bar {
+		width: 30%;
+	}
+	input {
+		font-size: 11px !important;
+	}
+}
+
+
+    @media screen and (max-width: 900px){
+
+		.favs {
+		display: none !important;
+	}
+
+	label[for="more"] {
+		display: block;
+    }
+    
+    /* -------------------------------- */
+    /* ------hidden the section 2 ---- */
+    /* ------------------------------ */
+	.section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+        background-image: linear-gradient(-19deg, rgb(0, 255, 221) 0%, blue 100%);
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 12%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+    }
+    
+	.playlist-content {
+		overflow: visible;
+    }
+    
+	/* -----------------adjusted the queue options box--------------- */
+	.queue-options {
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 7%;
+		right: 0%;
+    }
+    
+	input[id="more"]:checked ~ .section-2 {
+		visibility: visible;
+		opacity: 1;
+    }
+    
+	/* --------------------hide section-2 scrollbar--------------------------- */
+	.section-2::-webkit-scrollbar {
+		display: none;
+    }
+    
+	/* ----------------------section-1 100% when side playlist ids hide----------------------- */
+	.section-1 {
+		width: 100%;
+    }
+    
+	/*-------------------------------- carousel adjustment---------------------- */
+	.outer-carousel {
+		height: 9%;
+    }
+    
+	/* -------------------------------carousel image------------------- */
+	.inner-carousel img {
+		height: 23vw;
+		width: 34vw;
+    }
+    
+
+	.inner-carousel img:nth-child(1) {
+		left: 56vw;
+    }
+    
+	.inner-carousel img:nth-child(3) {
+		right: 56vw;
+    } 
+    
+	.inner-carousel img:hover {
+		height: 27vw;
+		width: 40.5vw;
+    }
+    
+    .flex-container > div img{
+        height: 180px;
+        width: 180px;
+    }
+
+	/* music themes section */
+	.music-themes {
+		justify-content: space-around;
+    }
+    
+	.mood-type {
+		width: 50%;
+    }
+    
+
+	/* increased theme content size */
+	.mood-content {
+		width: 12vw;
+		height: 12vw;
+    }
+    
+	.mood-content p {
+		font-size: 3vw;
+		top: -12.5vw;
+    }
+    
+	/* increased music themes image size */
+	.music-themes div img {
+		width: 12vw;
+		height: 12vw;
+    }
+    
+    .edm-content div p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .edm-content div img{
+        height: 25vw;
+        width: 27vw;
+    }
+
+    .language-content div img{
+        height: 100px;
+        width: 100px;
+    }
+	
+}
